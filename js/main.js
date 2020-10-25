@@ -1,9 +1,15 @@
 //video sound
 
 (function () {
+    let label = document.getElementById("phone__label-img");
     let video = document.getElementById("phonevideo");
     video.addEventListener("click", () => {
         event.target.muted = !event.target.muted;
+        if (event.target.muted === true) {
+            label.src = 'img/mute-label-2.png';
+        } else {
+            label.src = 'img/mute-label-1.png';
+        }
     });
 })();
 
@@ -27,5 +33,13 @@ $(document).ready(function () {
                 $('.accepted').css('display', 'flex');
             }
         }
+    });
+});
+
+// mobile request
+$(document).ready(function () {
+    $('.mobile-request').click(function (event) {
+        $('.mobile-signup-block').addClass('active');
+        $('.mobile-block__container').hide();
     });
 });
