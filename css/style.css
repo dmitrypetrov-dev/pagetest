@@ -799,7 +799,7 @@ input, select {
     .mobile-block__container {
         width: 100%;
         bottom: 0;
-        height: 30vh;
+        height: 162px;
     }
 
     .mobile-block__title {
