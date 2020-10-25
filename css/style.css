@@ -756,6 +756,7 @@ input, select {
     }
 
     .mobile-block__container {
+        width: 100%;
         bottom: 1vh;
         height: 33vh;
     }
