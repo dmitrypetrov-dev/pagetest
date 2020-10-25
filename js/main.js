@@ -47,3 +47,25 @@ $(document).ready(function () {
         $('.mobile-block__container').show();
     });
 });
+
+// mobile form submit
+
+$(document).ready(function () {
+    $('.gform').submit(function (event) {
+        $('.mobile-gform').css('display', 'none');
+        $('.mobile-countdown').addClass('active');
+
+        const time = $('.mobile-countdown__number');
+        intervalId = setInterval(timerDecrement, 1000);
+
+        function timerDecrement() {
+            const newTime = time.text() - 1;
+            time.text(newTime);
+            if (newTime === 0) {
+                clearInterval(intervalId);
+                $('.mobile-countdown').removeClass('active');
+                $('.accepted').css('display', 'flex');
+            }
+        }
+    });
+});
