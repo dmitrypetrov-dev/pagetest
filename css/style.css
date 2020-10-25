@@ -369,7 +369,7 @@ input, select {
     transform: translateX(-50%);
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1599px) {
 
     .main-block {
         padding-top: 5.4vh;
@@ -485,7 +485,7 @@ input, select {
 
     .phone {
         width: 335px;
-        height: 96vh;
+        height: auto;
         top: 2vh;
         left: 50%;
         transform: translateX(-50%);
@@ -499,4 +499,18 @@ input, select {
         display: none;
     }
 
+}
+
+@media screen and (max-width: 614px) {
+    .phone {
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .phone__video {
+        object-fit: cover;
+    }
 }
