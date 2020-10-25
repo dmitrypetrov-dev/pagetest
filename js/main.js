@@ -36,10 +36,14 @@ $(document).ready(function () {
     });
 });
 
-// mobile request
+// mobile request and close
 $(document).ready(function () {
     $('.mobile-request').click(function (event) {
         $('.mobile-signup-block').addClass('active');
         $('.mobile-block__container').hide();
+    });
+    $('.mobile-close').click(function (event) {
+        $('.mobile-signup-block').removeClass('active');
+        $('.mobile-block__container').show();
     });
 });
