@@ -793,12 +793,12 @@ input, select {
     }
 
     .phone__video {
-        object-fit: cover;
+        object-fit: fill;
     }
 
     .mobile-block__container {
         width: 100%;
-        bottom: 2vh;
+        bottom: 10vh;
         height: 162px;
     }
 
