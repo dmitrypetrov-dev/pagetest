@@ -88,12 +88,90 @@ img {
     text-transform: uppercase;
 }
 
+.mobile-block__container {
+    position: fixed;
+    width: 99%;
+    height: 210px;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 3px 15px 0 15px;
+    background-color: #000;
+    display: none;
+}
+
+.mobile-logo {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.mobile-logo-1 {
+    width: 28px;
+}
+
+.mobile-logo-2 {
+    width: 50px;
+    height: 20px;
+}
+
+.mobile-titles-block {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.mobile-block__title-left {
+    margin-right: 9px;
+}
+
+.mobile-block__title {
+    font-family: Bangers, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFCFC;
+}
+
+.signup-mobile__title {
+    font-family: Asparagus Sprouts, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFCFC;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.mobile-request {
+    display: block;
+    font-family: Kirsty Regular, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    width: 193px;
+    height: 38px;
+    border-radius: 23px;
+    background-color: #FBB22E;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 6px #00000067;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
 .phone {
     position: absolute;
     width: 19.79vw;
     height: 87.5vh;
     top: 6%;
     left: 42%;
+}
+
+.phone__label {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .phone__video {
@@ -245,6 +323,7 @@ input, select {
     outline: none;
     margin-bottom: 3vh;
     box-shadow: 0 0 6px #00000067;
+    cursor: pointer;
 }
 
 .text-bysign {
@@ -349,7 +428,7 @@ input, select {
     color: #FFFCFC;
     position: absolute;
     top: 85vh;
-    left: 71%;
+    left: 70%;
     text-shadow: 0 3px 50px #00000029;
 }
 
@@ -365,8 +444,117 @@ input, select {
     color: #fff;
     position: absolute;
     top: 96vh;
-    left: 50%;
+    left: 52%;
     transform: translateX(-50%);
+}
+
+.mobile-signup-block {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 40px 30px 30px 30px;
+    display: none;
+}
+
+.signup-mobile__form {
+    width: 100%;
+    height: 100%;
+}
+
+.mobile-gform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-countdown,
+.mobile-accepted {
+    display: none;
+}
+
+.mobile-gform-logo {
+    width: 100%;
+    margin: 0 0 25px 0;
+}
+
+.mobile-country,
+.mobile-age,
+.mobile-fullname,
+.mobile-user-email,
+.mobile-friends-email {
+    width: 100%;
+}
+
+.mobile-country,
+.mobile-age {
+    margin-right: 0;
+    margin-bottom: 15px;
+}
+
+.mobile-fullname {
+    margin-bottom: 30px;
+}
+
+.mobile-user-email {
+    margin-right: 0;
+    margin-bottom: 15px;
+}
+
+.mobile-gform-text {
+    font-size: 23px;
+}
+
+.mobile-friends-email {
+    margin-bottom: 30px;
+}
+
+.mobile-submit {
+    font-family: Kirsty Regular, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    width: 193px;
+    height: 38px;
+    border-radius: 23px;
+    background-color: #FBB22E;
+    border: none;
+    outline: none;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px #00000067;
+
+}
+
+.mobile-text-bysign {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.mobile-contacts {
+    width: 100%;
+    font-family: Asparagus Sprouts, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #FFFCFCBF;
+    text-shadow: 0 3px 50px #00000029;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.mobile-contacts a {
+    color: #FFFCFCBF;
+    text-decoration: none;
+}
+
+.mobile-copyright {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #FFFCFCBF;
+    text-align: center;
 }
 
 @media screen and (max-width: 1599px) {
@@ -467,6 +655,10 @@ input, select {
         width: 23.28vw;
     }
 
+    .mobile-gform-logo {
+        width: 100%;
+    }
+
     input, select {
         width: 23.28vw;
     }
@@ -479,16 +671,28 @@ input, select {
 }
 
 @media screen and (max-width: 830px) {
+    .main-block {
+        height: 725px;
+    }
+
     .main-block__container {
         display: none;
     }
 
+    .mobile-block__container {
+        display: block;
+    }
+
     .phone {
-        width: 335px;
-        height: auto;
+        width: 325px;
+        height: 700px;
         top: 2vh;
         left: 50%;
         transform: translateX(-50%);
+    }
+
+    .phone__label {
+        top: 43px;
     }
 
     .signup-block {
@@ -497,6 +701,10 @@ input, select {
 
     .copyright {
         display: none;
+    }
+
+    .mobile-signup-block.active {
+        display: block;
     }
 
 }
@@ -512,5 +720,9 @@ input, select {
 
     .phone__video {
         object-fit: cover;
+    }
+
+    .mobile-block__container {
+        height: 35vh;
     }
 }
