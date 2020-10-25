@@ -738,6 +738,11 @@ input, select {
 }
 
 @media screen and (max-width: 614px) {
+
+    .main-block {
+        height: 100vh;
+    }
+
     .phone {
         width: 100vw;
         height: 100vh;
@@ -751,6 +756,7 @@ input, select {
     }
 
     .mobile-block__container {
-        height: 35vh;
+        bottom: 1vh;
+        height: 33vh;
     }
 }
