@@ -455,7 +455,8 @@ input, select {
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, .8);
-    padding: 40px 30px 30px 30px;
+    padding: 40px 30px 0 30px;
+    overflow: auto;
     display: none;
 }
 
@@ -555,6 +556,7 @@ input, select {
     font-weight: 400;
     color: #FFFCFCBF;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .mobile-close {
@@ -757,7 +759,7 @@ input, select {
 
     .mobile-block__container {
         width: 100%;
-        bottom: 1vh;
-        height: 33vh;
+        bottom: 0;
+        height: 30vh;
     }
 }
