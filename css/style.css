@@ -557,6 +557,34 @@ input, select {
     text-align: center;
 }
 
+.mobile-close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50px;
+    right: 33px;
+}
+
+.mobile-close span:first-child {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    top: 13px;
+    right: 0;
+    transform: rotate(45deg);
+    background-color: #fff;
+}
+
+.mobile-close span:last-child {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    top: 13px;
+    right: 0;
+    transform: rotate(-45deg);
+    background-color: #fff;
+}
+
 @media screen and (max-width: 1599px) {
 
     .main-block {
