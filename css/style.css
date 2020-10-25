@@ -97,6 +97,7 @@ img {
     transform: translateX(-50%);
     padding: 3px 12px 0 12px;
     background-color: #000;
+    display: none;
 }
 
 .mobile-logo {
@@ -629,10 +630,6 @@ input, select {
     background-color: #fff;
 }
 
-.mobile-block__container {
-    display: none;
-}
-
 @media screen and (max-width: 1599px) {
 
     .main-block {
@@ -806,7 +803,8 @@ input, select {
     .mobile-block__container {
         width: 100%;
         height: 162px;
-        bottom: 67px;
+        bottom: 0;
+        margin-bottom: 67px;
     }
 
     .mobile-block__title {
