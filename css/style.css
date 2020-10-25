@@ -472,9 +472,26 @@ input, select {
     align-items: center;
 }
 
-.mobile-countdown,
+.mobile-countdown {
+    display: none;
+}
+
 .mobile-accepted {
     display: none;
+}
+
+.mobile-countdown.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 300px;
+}
+
+.mobile-countdown__number {
+    font-family: Arial, sans-serif;
+    font-size: 47px;
+    font-weight: 400;
+    color: #FFFCFC;
 }
 
 .mobile-gform-logo {
