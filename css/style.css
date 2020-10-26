@@ -144,7 +144,10 @@ img {
 }
 
 .mobile-request {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: Kirsty Regular, Arial, sans-serif;
     font-size: 24px;
     font-weight: bold;
@@ -556,6 +559,10 @@ input, select {
 }
 
 .mobile-submit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: Kirsty Regular, Arial, sans-serif;
     font-size: 24px;
     font-weight: bold;
