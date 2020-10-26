@@ -6,9 +6,9 @@
     video.addEventListener("click", () => {
         event.target.muted = !event.target.muted;
         if (event.target.muted === true) {
-            label.src = 'img/mute-label-2.png';
-        } else {
             label.src = 'img/mute-label-1.png';
+        } else {
+            label.src = 'img/mute-label-2.png';
         }
     });
 })();
