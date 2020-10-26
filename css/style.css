@@ -797,7 +797,7 @@ input, select {
         right: 0;
         bottom: 0;
         transform: none;
-        overflow: hidden;
+        overflow: auto;
     }
 
     .phone__video {
@@ -810,7 +810,6 @@ input, select {
         width: 100%;
         height: 162px;
         bottom: 0;
-        margin-bottom: 20px;
     }
 
     .mobile-block__title {
