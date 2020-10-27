@@ -821,11 +821,11 @@ input, select {
 
     .mobile-block__container {
         width: 100%;
-        height: 162px;
+        height: 50vw;
         bottom: 0;
     }
 
     .mobile-block__title {
-        font-size: 18px;
+        font-size: 4vw;
     }
 }
