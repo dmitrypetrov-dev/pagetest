@@ -1,11 +1,12 @@
 //video sound
 
 (function () {
-    let label = document.getElementById("phone__label-img");
-    let video = document.getElementById("phonevideo");
-    video.addEventListener("click", () => {
-        event.target.muted = !event.target.muted;
-        if (event.target.muted === true) {
+    let phoneDiv = document.querySelector(".phone__wrapper");
+    let label = document.querySelector(".phone__label-img");
+    let video = document.querySelector(".phone__video");
+    phoneDiv.addEventListener("click", () => {
+        video.muted = !video.muted;
+        if (video.muted === true) {
             label.src = 'img/mute-label-1.png';
         } else {
             label.src = 'img/mute-label-2.png';
