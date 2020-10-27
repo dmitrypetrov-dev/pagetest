@@ -96,7 +96,7 @@ img {
     left: 50%;
     transform: translateX(-50%);
     padding: 3px 12px 0 12px;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, .8);
     display: none;
 }
 
@@ -173,7 +173,9 @@ img {
 }
 
 .phone-wrapper {
-    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .phone__label {
@@ -641,7 +643,7 @@ input, select {
     background-color: #fff;
 }
 
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1550px) {
 
     .main-block {
         padding-top: 5.4vh;
