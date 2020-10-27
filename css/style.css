@@ -105,7 +105,7 @@ img {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 5px;
+    margin-bottom: 2vh;
 }
 
 .mobile-logo-1 {
@@ -826,6 +826,6 @@ input, select {
     }
 
     .mobile-block__title {
-        font-size: 4vw;
+        font-size: 5vw;
     }
 }
